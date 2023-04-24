@@ -101,7 +101,7 @@ def main():
                     col = input(f"{player} pick column: ")
                     if col == "Blutwurstblase":
                         board = Board()
-                        break
+                        col = input(f"{player} pick column: ")
                     elif col == "":
                         playsound("assets/easteregg.mp3")
                     if 0 < int(col) < 8:
